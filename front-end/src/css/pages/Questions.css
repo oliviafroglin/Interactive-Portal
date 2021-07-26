@@ -1,7 +1,38 @@
 
+
+.btn-group .button {
+  background-color: #4CAF50; /* Green */
+  border: 1px solid green;
+  color: rgb(255, 255, 255);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float: left;
+}
+/* a:link {
+  color: red;
+}
+
+a:hover {
+  color: rgb(255, 0, 13);
+}
+
+a:active {
+  color: green;
+} */
+
+.btn-group .button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+
+
 .block {
   border: 1px solid black;
-  width: 90%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -10,7 +41,71 @@
   color:blue;
   -webkit-text-stroke: 1px black;
 }
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
 
+.header h1 {
+  font-size: 50px;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30%;
+  padding: 100px;
+}
+
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+
+
+.yell {
+  background-color: yellow;
+}
+
+.padding {
+  padding: 60px;
+}
+
+
+.flex-box {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-box #myCarousel{
+  flex: 1 1 60%
+}
+
+.flex-box #desc {
+  flex: 1 1 50%;
+}
+.FAQ__question {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+}
+
+.FAQ__question:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.FAQ__answer--hidden {
+  display: none;
+}
 @media screen and (max-width: 2400px) {
   .full-text {
     font-size: 16px;
@@ -44,19 +139,4 @@
   }
 }
 
-.FAQ__question {
-  background: none;
-  border: none;
-  width: 100%;
-  text-align: left;
-  font-size: 14px;
-}
 
-.FAQ__question:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.FAQ__answer--hidden {
-  display: none;
-}
